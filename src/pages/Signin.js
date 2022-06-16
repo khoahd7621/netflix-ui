@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { FirebaseContext } from "../context/Firebase";
 import { HeaderContainer, FooterContainer } from "../containers/index";
 import { Form } from "../components";
+import * as ROUTES from "../constants/routes";
 
 const Signin = () => {
+  const navigate = useNavigate();
+  const { Firebase } = useContext(FirebaseContext);
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -13,7 +18,16 @@ const Signin = () => {
   const handleSignIn = (event) => {
     event.preventDefault();
 
-    // firebase work here!
+    Firebase.auth()
+      .signInWithEmailAndPassword(emailAddress, password)
+      .then(() => {
+        // navigate to the browse page
+        navigate(ROUTES.BROWSE);
+      })
+      .catch((error) => {
+        setPassword("");
+        setError(error.message);
+      });
   };
 
   return (
