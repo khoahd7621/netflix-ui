@@ -1,6 +1,6 @@
-export { default as Jumbotron } from "./Jumbotron";
-export { default as Footer } from "./footer";
-export { default as Accordion } from "./accordion";
-export { default as OptForm } from "./opt-form";
+export { default as Jumbotron } from "./Jumbotron/Jumbotron";
+export { default as Footer } from "./Footer/Footer";
+export { default as Accordion } from "./Accordion/Accordion";
+export { default as OptForm } from "./OptForm/OptForm";
 export { default as Header } from "./Header/Header";
 export { default as Feature } from "./Feature/Feature";

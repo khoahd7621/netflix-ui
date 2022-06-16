@@ -1,10 +1,12 @@
 import React from "react";
 
 import { Feature, OptForm } from "../components";
-import FooterContainer from "../containers/footer";
-import { FaqsContainer } from "../containers/fqs";
-import HeaderContainer from "../containers/header";
-import { JumbotronContainer } from "../containers/jumbotron";
+import {
+  HeaderContainer,
+  JumbotronContainer,
+  FqsContainer,
+  FooterContainer,
+} from "../containers/index";
 
 const Home = () => {
   return (
@@ -29,7 +31,7 @@ const Home = () => {
       </HeaderContainer>
 
       <JumbotronContainer />
-      <FaqsContainer />
+      <FqsContainer />
       <FooterContainer />
     </>
   );

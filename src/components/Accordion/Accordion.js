@@ -6,7 +6,7 @@ import {
   Inner,
   Header,
   Body,
-} from "./styles/accordion";
+} from "./styles/AccordionStyle";
 
 const ToggleContext = createContext();
 
