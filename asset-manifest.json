@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/netflix-ui/static/css/main.d33dd536.css",
+    "main.js": "/netflix-ui/static/js/main.73783122.js",
+    "static/media/logo.svg": "/netflix-ui/static/media/logo.5787551b8de42aef368c379572555ada.svg",
+    "index.html": "/netflix-ui/index.html",
+    "main.d33dd536.css.map": "/netflix-ui/static/css/main.d33dd536.css.map",
+    "main.73783122.js.map": "/netflix-ui/static/js/main.73783122.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d33dd536.css",
+    "static/js/main.73783122.js"
+  ]
+}
